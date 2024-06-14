@@ -1,0 +1,187 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 16px;
+text-align: start;
+font-family: "Roboto", sans-serif;
+ 
+}
+ 
+.active-link{
+    color: black !important;
+    transition: 0.2s;
+    text-decoration: none;
+}
+.active-link:hover{
+
+    color: #938282 !important;
+}
+.nav-link{
+    color:  rgb(176, 176, 176) ; 
+    font-weight: 700;
+}
+.link-title:hover{
+    color: #23527c !important;
+transition: 0.2s;
+}
+.nav-link:hover{
+    
+    color: black !important; 
+}
+span{
+    font-size: 12px;
+    line-height: 24px;
+}
+.span-title{
+    border-left:2px solid red;
+    font-weight: 600;
+    
+}
+.span-author{
+    border-left:2px solid  #b0b0b0; 
+    color: #b0b0b0;
+    font-weight: 500;
+}
+.card-text{
+    color: rgb(80, 80, 80);
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Eina03", "Open Sans", sans-serif;
+}
+.main-img{
+    height: 350px; 
+    width: 320px;
+}
+.footer-link{
+
+    text-decoration: none;
+    color: #6c757d;
+    transition: 0.1s ease-in-out;
+}
+.footer-link:hover{
+color:#b0b0b0
+    
+}
+.blog-card{
+
+    width: 22.2rem;
+    height: 224px;
+}
+.blog-text{
+    margin-top: -200px;
+}
+
+.sidebar-link:hover{
+    transition: 0.2s ease-in-out;
+    color: white;
+background-color: #da0505;
+}
+.custom-sidebar {
+    width: 250px !important; 
+}
+.custom-input{
+    width: 75%;
+}
+.custom-btn{
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+}
+.nav-btn{
+    color: #ff012f;
+}
+.nav-btn:hover{
+    color: #c30326;
+}
+.custom-btn:hover{
+    color: white;
+    background-color: #00d1c1;
+}
+.coupon-btn{
+    background-color: #525151;
+    color: #fff;
+    border: none;
+    border-radius: 0px 18px;
+    padding: 5px 25px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.coupon-span{
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(173, 151, 151);
+    border-radius: 0px 20px;
+
+    padding: 10px 8px;
+}
+.btn-warning{
+    background-color: #f45435;
+    color: #ffffff;
+}
+.btn-warning:hover{
+    background-color: #f45435;
+    color: rgb(0, 131, 157);
+}
+.btn-outline-info:hover{
+
+    color: white;
+}
+.nav-list{
+
+color: #00aca3 !important;
+}
+.nav-list:hover{
+    color: #008780 !important;
+}
+
+@media (max-width: 480px) { 
+
+    .main-img{
+        
+        width: 100%;
+    }
+    .card-img-top{
+        width: 100%;
+        height: 350px;
+    }
+
+ }
+ @media (max-width:768px) { 
+
+    .main-img{
+        
+        width: 100%;
+    }
+    .card-img-top{
+        width: 100%;
+        height: 350px;
+    }
+ 
+ }
+ @media (max-width: 1024px) {
+
+    .blog-card{
+
+        width: 100%;
+    }
+    .blog-text{
+        margin-top: 0;
+    }
+    .custom-input{
+        width: 100%;
+    }
+    .coupon-btn{
+        background-color: #525151;
+        color: #fff;
+        border: none;
+        border-radius: 0px 18px;
+        margin-top: 0.5px;
+        padding: 5px 25px;
+        font-size: 10px;
+        text-align: center;
+        cursor: pointer;
+     
+    }
+  }
+ 

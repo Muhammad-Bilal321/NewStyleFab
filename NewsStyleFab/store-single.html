@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Single</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Start  -->
+    <header class="w-75 mx-auto">
+        <!-- Navbar Start -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container ">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center col-12 col-lg-1">
+                    <button class="navbar-toggler border-0 shadow-none col-1" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand " href="#">
+                        <img src="https://www.newstylefab.com/images/logo.png" height="10" width="90" class="img-fluid"
+                            alt="">
+                    </a>
+                </div>
+                <form class="my-2 my-lg-0 order-0 order-lg-last mx-auto position-relative col-xl-3">
+                    <input class="form-control border rounded shadow-none" type="search" onkeyup="search(this)"
+                        placeholder="Search" aria-label="Search">
+                    <div
+                        class="position-absolute d-none bg-white w-100 border border-top-0 overflow-auto search_response-output top-100 ">
+                        <ul class="list-unstyled pt-2 d-flex flex-column container-fluid mb-0">
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit-cover rounded-lg mr-1 search_response-img"
+                                            height="100" width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit rounded-lg mr-1 search_response-img z-3"
+                                            height="100" width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit rounded-lg mr-1 search_response-img" height="100"
+                                            width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit rounded-lg mr-1 search_response-img" height="100"
+                                            width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit rounded-lg mr-1 search_response-img" height="100"
+                                            width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit rounded-lg mr-1 search_response-img" height="100"
+                                            width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit rounded-lg mr-1 search_response-img" height="100"
+                                            width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                <div class="collapse navbar-collapse col" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto fw-semibold ">
+                        <li class="nav-item active">
+                            <a class="nav-link active-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog-single.html">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Brands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Coupons</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+    </header>
+    <!-- Navbar End  -->
+
+    <!-- Search Bar Start -->
+    <main>
+        <section class="bg-danger text-light p-5 my-5">
+            <p class="text-center mb-5 fs-1">Discounts & Promo Codes</p>
+            <div class="input-group mb-3 px-lg-5 mx-auto custom-input">
+                <input type="text" class="form-control py-4 mx-lg-5 px-lg-5 shadow rounded-4"
+                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+        </section>
+    </main>
+    <!-- Search Bar End -->
+
+    <!-- Store Section Start -->
+    <main class="container">
+        <section class="container">
+            <div class="row gap-5 d-flex flex-column-reverse flex-lg-row">
+                <!-- Left Side Start-->
+                <div class="col-lg-3 col-md-12 col-12 mx-lg-5 my-md-4">
+                    <!-- 1st Row Start -->
+                    <div class="bg-transparent">
+                        <div class="bg-white m-lg-4 p-lg-2 p-3">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="assets/images/built.png" alt="img"
+                                        class="img-fluid object-fit-cover col-lg-8 col-md-6">
+                                    <div class="my-5">
+                                        <p class="text-center">Built bar</p>
+                                        <button class="btn btn-outline-info rounded-pill px-xl-5 fw-bold">Go To
+                                            Store</button>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="bg-light">
+                                <p class="w-auto text-center text-lg-start">Built Bar is the online shop offering tasty
+                                    kinds of protein bars for
+                                    the wellness
+                                    mentors and wellness aficionados at reasonable rates They highlighted protein bars
+                                    in wide assortment of delectable flavors like nut better bar coconut bar pumpkin pie
+                                    bar lemon bar banana bar mango bar pina colda bars and parts more.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 1st Row End -->
+
+                    <!-- 2nd Row Start -->
+                    <div class="row text-center my-3 bg-white py-4 rounded-1 mx-lg-4">
+                        <h6 class="ms-lg-1 fw-bold text-center text-xl-start">Similar Stores</h6>
+                        <div class="">
+                            <ul class="list-unstyled">
+                                <li class="mx-lg-1 mx-md-4 mt-2 text-center text-xl-start">
+                                    <a href="#" class="text-success text-decoration-none nav-list">
+                                        Health & Beauty
+                                    </a>
+                                </li>
+                                <li class="mx-lg-1 mx-md-4 mt-2 text-center text-xl-start">
+                                    <a href="#" class="text-success text-decoration-none nav-list">
+                                        Health & Beauty
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 2nd Row End -->
+                </div>
+                <!-- Left Side End-->
+
+                <!-- Right Side Start-->
+                <div class="col-lg-7 col-md-12 col-12">
+                    <div class="row gap-5 pt-5 justify-content-center bg-white rounded-1">
+                        <section class="card col-12 col-md-5 col-xl-3 my-5 shadow ">
+                            <div class="d-flex justify-content-center " style="margin-top: -100px;">
+                                <img src="assets/images/built.png" alt="Card image-fli"
+                                    class="border border-2 rounded-circle w-75  shadow">
+                            </div>
+                            <div class="card-body text-center px-2">
+                                <p class="card-title fs-6 fw-bold text-center mt-3 mb-2 pb-5">Get 20% Off Sitewide</p>
+                                <div class="text-success">
+                                    <p class="text-center">Expires: 2026-12-20</p>
+                                </div>
+                                <span class="coupon-span"> <button type="button" href="#" class="coupon-btn"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">Get
+                                        Code</button>
+                                </span>
+                            </div>
+                        </section>
+                        <section class="card col-12 col-md-5 col-xl-3 my-5 shadow ">
+                            <div class="d-flex justify-content-center " style="margin-top: -100px;">
+                                <img src="assets/images/built.png" alt="Card image-fli"
+                                    class="border border-2 rounded-circle w-75  shadow">
+                            </div>
+                            <div class="card-body text-center px-2">
+                                <p class="card-title fs-6 fw-bold text-center mt-3 mb-2 pb-5">Get 20% Off Sitewide</p>
+                                <div class="text-success">
+                                    <p class="text-center">Expires: 2026-12-20</p>
+                                </div>
+                                <span class="coupon-span"> <button href="#" class="coupon-btn">Get
+                                        Code</button>
+                                </span>
+                            </div>
+                        </section>
+                        <section class="card col-12 col-md-5 col-xl-3 my-5 shadow ">
+                            <div class="d-flex justify-content-center " style="margin-top: -100px;">
+                                <img src="assets/images/built.png" alt="Card image-fli"
+                                    class="border border-2 rounded-circle w-75  shadow">
+                            </div>
+                            <div class="card-body text-center px-2">
+                                <p class="card-title fs-6 fw-bold text-center mt-3 mb-2 pb-5">Get 20% Off Sitewide</p>
+                                <div class="text-success">
+                                    <p class="text-center">Expires: 2026-12-20</p>
+                                </div>
+                                <span class="coupon-span"> <button href="#" class="coupon-btn">Get
+                                        Code</button>
+                                </span>
+                            </div>
+                        </section>
+                        <section class="card col-12 col-md-5 col-xl-3 my-5 shadow ">
+                            <div class="d-flex justify-content-center " style="margin-top: -100px;">
+                                <img src="assets/images/built.png" alt="Card image-fli"
+                                    class="border border-2 rounded-circle w-75  shadow">
+                            </div>
+                            <div class="card-body text-center px-2">
+                                <p class="card-title fs-6 fw-bold text-center mt-3 mb-2 pb-5">Get 20% Off Sitewide</p>
+                                <div class="text-success">
+                                    <p class="text-center">Expires: 2026-12-20</p>
+                                </div>
+                                <span class="coupon-span"> <button href="#" class="coupon-btn">Get
+                                        Code</button>
+                                </span>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- Right Side End-->
+
+                <!-- Modal Start-->
+                <div class="modal fade border border-5 " id="exampleModal" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Built Bar Coupons & Promo Codes Jun
+                                    2024</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <div class="p-lg-2 p-3">
+                                        <a href="#" class="text-decoration-none text-dark">
+                                            <div class="text-center">
+                                                <div class="text-center">
+                                                    <img src="assets/images/built.png" alt="img"
+                                                        class="img-fluid object-fit-cover col-lg-4 col-md-6">
+                                                </div>
+
+                                                <button class="btn btn-secondary my-2 w-25">Visit Store</button>
+                                                <div>
+                                                    <p class="text-center">Get 20% Off Sitewide</p>
+                                                    <p class="text-center">Copy and Paste Code At Checkout</p>
+                                                </div>
+
+
+                                                <h5 class="text-center">Code</h5>
+                                                <button class="btn btn-outline-info rounded-pill fw-bold ">Go
+                                                    To Store
+                                                </button>
+
+                                            </div>
+                                        </a>
+                                        <div class="text-center mt-4">
+                                            <button type="button" class="btn btn-warning fw-bold px-4"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal End-->
+            </div>
+        </section>
+    </main>
+    <!-- Store Section End -->
+    <!-- Footer Start  -->
+    <footer class="bg-black text-light py-5 mt-4">
+        <main class="container d-lg-flex justify-content-around">
+            <div class="col-lg-4 col-sm-12">
+                <a class="navbar-brand m-0 col-2 col-md" href="#">
+                    <img src="https://www.newstylefab.com/images/logo.png" class="img-fluid" height="10" width="90"
+                        alt="">
+                </a>
+                <p class="px-1 py-3 col-lg-8 text-secondary">With affiliated merchants, we offer digital coupons to the
+                    customer who
+                    is interested in different
+                    merchants. We provide full convenience on a single touchpoint to the user who is just here for the
+                    specific merchant and is interested in buying households to apparel stuff.</p>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <h6>RECENT BLOGS</h6>
+
+                <div class="my-lg-4 ">
+                    <li class="list-unstyled pt-3">
+                        <a href="#" class="footer-link">Unwind The Mystery To Fitness</a>
+                    </li>
+                    <li class="list-unstyled py-4">
+                        <a href="#" class="footer-link">Unwind The Mystery To Fitness</a>
+                    </li>
+                    <li class="list-unstyled pb-2">
+                        <a href="#" class="footer-link">Unwind The Mystery To Fitness</a>
+                    </li>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <h6>USEFUL LINKS</h6>
+                <div class="my-lg-4">
+                    <li class="list-unstyled pt-3">
+                        <a href="#" class="footer-link">Promotions</a>
+                    </li>
+                    <li class="list-unstyled py-2">
+                        <a href="#" class="footer-link">About Us</a>
+                    </li>
+                    <li class="list-unstyled py-2">
+                        <a href="#" class="footer-link">Terms & Conditions</a>
+                    </li>
+                    <li class="list-unstyled py-2">
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </li>
+                    <li class="list-unstyled py-2">
+                        <a href="#" class="footer-link">Impressum</a>
+                    </li>
+                    <li class="list-unstyled py-2">
+                        <a href="#" class="footer-link">Contact Us</a>
+                    </li>
+                </div>
+            </div>
+        </main>
+    </footer>
+    <!-- Footer End  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
